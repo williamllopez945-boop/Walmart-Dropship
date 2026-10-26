@@ -2,11 +2,12 @@
   "name": "walmart-dropship",
   "private": true,
   "version": "0.1.0",
-  "description": "Automated Walmart Marketplace fulfillment agent",
+  "description": "Walmart Fulfillment Services (WFS) restock agent",
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "agent:once": "tsx src/agent/fulfillment-loop.ts"
+    "restock": "tsx src/agent/restock.ts",
+    "restock:ship": "tsx src/agent/restock.ts --create-shipment"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
