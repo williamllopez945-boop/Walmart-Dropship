@@ -1,0 +1,19 @@
+{
+  "name": "walmart-dropship",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Automated Walmart Marketplace fulfillment agent",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "agent:once": "tsx src/agent/fulfillment-loop.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
